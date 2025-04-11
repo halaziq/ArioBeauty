@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=GFS+Didot&display=swap");
+
+:root {
+  --babyPink: #f4dddd;
+  --pinkRose: #c7605f;
+  --carousalPink: #eadbcb;
+  --arioBlak: black;
+  --arioWhite: white;
+  --skyBlue: #78dce2;
+  --brick: #6b302c;
+  --brown: #894949;
+  --textFiledColor: #f5f5f5;
+  --fontFamilyDidot: "GFS Didot", serif;
+  --fontFamily: "Be Vietnam Pro", serif;
+  --footer-bg: #F7F7F7;
+  color: var(--arioBlak);
+  padding: 0px;
+  margin: 0px;
+}
+
+.didot{
+  font-family: var(--fontFamilyDidot);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+
+}
+a {
+  text-decoration: none;
+  color: var(--arioBlack);
+}
+
+a:hover {
+  color: var(--pinkRose);
+}
+.ario-text-white {
+  color: var(--arioWhite);
+}
+.ario-text-pink {
+  color: var(--pinkRose);
+}
+.ario-text-black {
+  color: var(--arioBlack);
+}
+
+.ario-bg-white {
+  background-color: var(--arioWhite);
+}
+
+.ario-bg-black {
+  background-color: var(--arioBlak);
+}
+
+.ario-bg-pinkRose {
+  background-color: var(--pinkRose);
+}
+
+.ario-bg-carousalPink {
+  background-color: var(--carousalPink);
+}
+
+.ario-font-family {
+  font-family: "Be Vietnam Pro", serif;
+}
+
+.ario-bg-skyBlue {
+  background-color: var(--skyBlue);
+}
+.footer-bg {
+  background-color: var(--footer-bg);
+}
+.ario-bg-brown {
+  background-color: var(--brown);
+}
+
+.ario-bg-brick {
+  background-color: var(--brick);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NARS Rouge-Ario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="./assets/css/base.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link href="./assets/css/product.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg py-4 sticky-top top-0">
+      <div class="container-fluid">
+        <div class="d-lg-none d-flex">
+          <a href="#">
+            <i class="fa-solid fa-bag-shopping fa-xl ario-text-black">
+              <div
+                class="counts rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <p class="l-counts text-center">0</p>
+              </div>
+            </i>
+          </a>
+        </div>
+
+        <a class="navbar-brand mx-auto" href="#">
+          <img
+            class="logo-img"
+            src="./assets/images/indexImages/logo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <!-- Right: Offcanvas Menu Button (Visible only on small screens) -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Sidebar (Only visible on small screens) -->
+        <div
+          class="offcanvas offcanvas-end d-lg-none"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body ario-font-family">
+            <ul class="navbar-nav ms-auto mb-lg-0 text-uppercase d-flex gap-4">
+                 <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page</a>
+              </li>
+            </ul>
+            <form class="d-flex search-form mt-3 rounded-pill" role="search">
+              <a class="search-icon" href="#"
+                ><i class="fa-solid fa-magnifying-glass ps-3 text-black"></i
+              ></a>
+              <input
+                class="form-control border-none me-2"
+                type="search"
+                placeholder="Search..."
+              />
+            </form>
+          </div>
+        </div>
+
+        <!-- Desktop Navbar (Only visible on large screens) -->
+        <div
+          class="collapse navbar-collapse mt-1 d-none d-lg-flex"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-lg-0 text-uppercase d-flex gap-4">
+            <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page</a>
+              </li>
+          </ul>
+          <form class="d-flex search-form ms-5 rounded-pill" role="search">
+            <a class="search-icon" href="#"
+              ><i class="fa-solid fa-magnifying-glass ps-3 text-black"></i
+            ></a>
+            <input
+              class="form-control border-none me-2"
+              type="search"
+              placeholder="Search..."
+            />
+          </form>
+          <div class="nav-right d-flex px-4 gap-4">
+            <a href="#"
+              ><i class="fa-regular fa-user fa-lg ario-text-black"></i
+            ></a>
+            <a href="#">
+              <i class="fa-regular fa-heart fa-lg ario-text-black">
+                <div
+                  class="counts rounded-circle d-flex justify-content-center align-items-center"
+                >
+                  <p class="l-counts text-center">0</p>
+                </div>
+              </i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-bag-shopping fa-xl ario-text-black">
+                <div
+                  class="counts rounded-circle d-flex justify-content-center align-items-center"
+                >
+                  <p class="l-counts text-center">0</p>
+                </div>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <hr />
+    <div class="nav-tree ms-3 pb-3">
+      <a href="./index.html">Home</a>
+      <a href="#" class="current"></a>
+    </div>
+    <section class="product">
+      <div class="pb-5 product-info">
+        <div class="col-lg-6 col-md-6 gallery d-flex">
+          <div class="col-lg-4 col-md-4">
+            <div
+              class="prod-gallery active"
+              data-image="./assets/images/productImages/narsdarknode.jpg"
+            >
+              <img
+                class="h-100 w-100"
+                id="image"
+                src="./assets/images/productImages/narsdarknode.jpg"
+              />
+            </div>
+            <div
+              class="prod-gallery"
+              data-image="./assets/images/productImages/narsdarkred.jpg"
+            >
+              <img
+                class="h-100 w-100"
+                id="image1"
+                src="./assets/images/productImages/narsdarkred.jpg"
+              />
+            </div>
+
+            <div
+              class="prod-gallery"
+              data-image="./assets/images/productImages/narsnode.jpg"
+            >
+              <img
+                class="h-100 w-100"
+                id="image2"
+                src="./assets/images/productImages/narsnode.jpg"
+              />
+            </div>
+
+            <div
+              class="prod-gallery"
+              data-image="./assets/images/productImages/narspeach.jpg"
+            >
+              <img
+                class="h-100 w-100"
+                id="image3"
+                src="./assets/images/productImages/narspeach.jpg"
+              />
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-8 me-sm-2">
+            <img
+              id="product-image"
+              class="h-100 w-100"
+              src="./assets/images/productImages/narsdarknode.jpg"
+            />
+          </div>
+        </div>
+        <div
+          class="col-lg-6 col-md-6 prod-data ms-md-2 me-md-2 mt-sm-5 ms-sm-4"
+        >
+          <h1 class="text-uppercase"></h1>
+          <div class="d-flex stars align-items-center">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star last"></i>
+            <a href="#">
+              <p class="review-counts">(1 Customer Review)</p>
+            </a>
+          </div>
+          <div class="d-flex price gap-2 mt-2">
+            <p id="price">$75.00</p>
+            <p id="sale" class="text-decoration-line-through">$80.00</p>
+          </div>
+          <hr class="me-3" />
+
+          <div class="d-flex view gap-2 align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <p>37 people are viewing this right now</p>
+          </div>
+          <p class="text-capitalize text-justify">
+            NARS Rouge delivers intense, long-lasting color with a luxurious,
+            lightweight feel. Infused with rich pigments and a creamy formula,
+            it glides on effortlessly for a bold, velvety finish. Elevate your
+            look with the perfect balance of elegance and edge.
+          </p>
+          <div class="d-flex gap-3 me-3">
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 select-count rounded-pill ario-bg-pinkRose d-flex align-items-center justify-content-evenly"
+            >
+              <button id="decrease">-</button>
+              <span
+                class="counter d-flex align-items-center justify-content-center"
+              >
+                1
+              </span>
+              <button id="increase">+</button>
+            </div>
+            <div
+              class="addCart col-lg-8 col-md-8 col-sm-8 ario-bg-pinkRose ario-text-white cart rounded-pill text-uppercase d-flex align-items-center justify-content-center"
+            >
+              add to cart
+            </div>
+          </div>
+          <hr class="me-3" />
+          <div class="d-flex interaction align-items-center">
+            <a href="#" class="event rounded-circle">
+              <i class="fa-regular fa-heart"> </i>
+            </a>
+            <a href="#" class="inter-desc"> Add to wishlist </a>
+
+            <a href="#" class="event rounded-circle">
+              <i class="fa-solid fa-share-nodes"></i>
+            </a>
+            <a href="#" class="inter-desc"> Share </a>
+          </div>
+          <div
+            class="freeShipping ario-text-black d-flex mt-1 align-items-center justify-content-start gap-2 ms-2"
+          >
+            <i class="fa-solid fa-box"></i>
+            <p class="d-flex justify-content-center align-items-center">
+              Free worldwide shipping on all orders over $100
+            </p>
+          </div>
+          <div
+            class="freeShipping ario-text-black d-flex mt-1 align-items-center justify-content-start gap-2"
+          >
+            <i class="fa-regular fa-clock"></i>
+            <p class="d-flex justify-content-center align-items-center">
+              Delivers in: 3-7 Working Days
+            </p>
+            <a class="d-flex ms-2 justify-content-center align-items-center"
+              >Categories: Bestseller, Lipsticks</a
+            >
+          </div>
+        </div>
+      </div>
+      <ul
+        class="nav nav-tabs justify-content-center my-5 text-uppercase"
+        id="myTabs"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#description"
+            >description</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#reviews">reviews</a>
+        </li>
+      </ul>
+
+      <div class="tab-content mt-3">
+        <div id="description" class="tab-pane fade show active">
+          <p class="mx-5 text-capitalize">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div id="reviews" class="tab-pane fade mx-5 pb-5">
+          <h3>Reviews</h3>
+          <p>There are no reviews yet.</p>
+        </div>
+      </div>
+    </section>
+    <section class="related-sec">
+      <div class="related new-arv-prod w-100">
+        <h2
+          class="text-uppercase d-flex justify-content-center ario-font-family py-3"
+        >
+          related products
+        </h2>
+        <div class="contain d-flex justify-content-center align-items-center">
+          <div class="item-container related-pro swiper">
+            <div class="item-contanet w-100">
+              <div class="swiper-wrapper d-flex">
+                <div
+                  class="item swiper-slide"
+                  data-title="Reflecting Setting Powder"
+                  data-description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                  data-price="$120.00"
+                  data-sale="$150.00"
+                  data-image="./assets/images/indexImages/newArrival/NARSettingPowder.jpg"
+                  data-image1="./assets/images/indexImages/newArrival/NARSettingPowder1.jpg"
+                  data-image2="./assets/images/indexImages/newArrival/NARSettingPowder2.jpg"
+                  data-image3="./assets/images/indexImages/newArrival/settingPowder.jpg"
+                >
+                  <img
+                    id="powder-image"
+                    class="w-80 h-100"
+                    src="./assets/images/indexImages/newArrival/NARSettingPowder.jpg"
+                    alt="A black compact case with its lid open, revealing a white powder inside. The brand name 'NARS' is displayed prominently on the lid in white lettering."
+                  />
+                  <img
+                    id="img-hover"
+                    class="w-80 h-100 hover-img"
+                    src="./assets/images/indexImages/newArrival/settingPowder.jpg"
+                    alt="A rectangular frame made of white powder placed on a white background. The white powder is concentrated around the edges, creating a border effect."
+                  />
+                  <div
+                    class="hot rounded-pill ario-bg-skyBlue ario-text-white text-center text-uppercase"
+                  >
+                    hot
+                  </div>
+                  <div
+                    class="discount rounded-pill ario-bg-pinkRose ario-text-white text-center text-uppercase"
+                  >
+                    -20%
+                  </div>
+
+                  <div
+                    class="add-cart cart-func rounded-pill text-uppercase ario-text-black"
+                  >
+                    add to cart
+                  </div>
+
+                  <span class="right-icons d-flex flex-column gap-2">
+                    <a
+                      class="icon rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Quick View"
+                      data-bs-target="#quickViewModal"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a
+                      class="icon like rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Wishlist"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+
+                  <h3 class="text-uppercase mt-4">reflecting setting powder</h3>
+                  <div class="price mt-3">
+                    <p>$120.00</p>
+                    <p class="text-decoration-line-through">$150.00</p>
+                  </div>
+                  <div class="palette-colors">
+                    <div class="outlayer rounded-circle">
+                      <div
+                        data-image="./assets/images/indexImages/newArrival/NARSettingPowder1.jpg"
+                        role="img"
+                        aria-label="Black compact case with the lid open, displaying white powder. Brand name 'NARS' is on the lid in large white letters."
+                        class="powder-col brick rounded-circle ario-bg-brick"
+                      ></div>
+                    </div>
+
+                    <div class="outlayer rounded-circle">
+                      <div
+                        data-image="./assets/images/indexImages/newArrival/NARSettingPowder.jpg"
+                        role="img"
+                        aria-label="NARS bronzer in a rectangular black compact. The bronzer surface is embossed with the brand name 'NARS' in a warm brown shade with a slight shimmer. The lid features the brand name written in orange letters."
+                        class="powder-col white rounded-circle ario-bg-white"
+                      ></div>
+                    </div>
+
+                    <div class="outlayer rounded-circle">
+                      <div
+                        data-image="./assets/images/indexImages/newArrival/NARSettingPowder2.jpg"
+                        class="powder-col brown rounded-circle ario-bg-brown"
+                        role="img"
+                        aria-label="NARS blush in a black compact case with the lid open showing the blush color."
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="item swiper-slide"
+                  data-title="The Whipp"
+                  data-description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                  data-price="$75.00"
+                  data-sale="$80.00"
+                  data-image="./assets/images/indexImages/newArrival/the-whipp.jpg"
+                  data-image1="./assets/images/indexImages/newArrival/the-whipp1.jpg"
+                  data-image2="./assets/images/productImages/whipp.jpg"
+                  data-image3="./assets/images/productImages/whipps.jpg"
+                >
+                  <img
+                    class="w-100 h-100"
+                    src="./assets/images/indexImages/newArrival/the-whipp.jpg"
+                    alt="A white container labeled 'THE WHIPP' whipped body cream by MANTLE. The product emphasizes its key ingredients: shea butter, ceramide complex, hyaluronic acid, and allantoin (1%). The container mentions its size: 200 ML / 6.76 FL.OZ."
+                  />
+                  <img
+                    class="w-100 h-100 hover-img"
+                    src="./assets/images/indexImages/newArrival/the-whipp1.jpg"
+                    alt="A white container of 'THE WHIPP' whipped body cream by MANTLE. The lid is slightly open, revealing the creamy texture inside. The label highlights its features, including 'Ultra-Nourishing Whipped Body Cream with Hyaluronic Acid, Aloe Vera, CBD' and indicates a volume of '200 ML / 6.8 FL.OZ."
+                  />
+
+                  <div
+                    class="discount rounded-pill ario-bg-pinkRose ario-text-white text-center text-uppercase"
+                  >
+                    -6%
+                  </div>
+
+                  <div
+                    class="add-cart cart-func rounded-pill text-uppercase ario-text-black"
+                  >
+                    add to cart
+                  </div>
+                  <span class="right-icons d-flex flex-column gap-2">
+                    <a
+                      class="icon rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Quick View"
+                      data-bs-target="#quickViewModal"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a
+                      class="icon like rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Wishlist"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+                  <h3 class="text-uppercase mt-4">the whipp</h3>
+                  <div class="price mt-3">
+                    <p>$75.00</p>
+                    <p class="text-decoration-line-through">$80.00</p>
+                  </div>
+                </div>
+                <div
+                  class="item swiper-slide"
+                  data-title="The Wow Serum"
+                  data-description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                  data-price="$95.00"
+                  data-sale="$100.00"
+                  data-image="./assets/images/indexImages/newArrival/wow1.jpg"
+                  data-image1="./assets/images/indexImages/newArrival/wow2.jpg"
+                  data-image2="./assets/images/productImages/eye-serum.jpg"
+                  data-image3="./assets/images/productImages/eye-serum-bold.jpg"
+                >
+                  <img
+                    class="w-100 h-100"
+                    src="./assets/images/indexImages/newArrival/wow1.jpg"
+                    alt="A bottle of 'The Wow Serum' by Hanahje, featuring a pump dispenser filled with brown liquid. The label highlights key details such as 'Illuminating Vitamin C Serum,' '100% Natural,' and '30 ML / 1.0 FL OZ.' The brand name 'Hanahje' is vertically displayed on the left side of the label."
+                  />
+                  <img
+                    class="w-100 h-100 hover-img"
+                    src="./assets/images/indexImages/newArrival/wow2.jpg"
+                    alt="A bottle of 'The Wow Serum' by Mantle with a white pump dispenser. The bottle contains a golden-brown liquid, with some of the liquid visibly dripping down the side of the dispenser. The background features a gradient transitioning from dark to light gray."
+                  />
+
+                  <div
+                    class="discount rounded-pill ario-bg-pinkRose ario-text-white text-center text-uppercase"
+                  >
+                    -5%
+                  </div>
+
+                  <a
+                    href="#"
+                    class="add-cart rounded-pill text-uppercase ario-text-black"
+                  >
+                    Read more
+                  </a>
+
+                  <span class="right-icons d-flex flex-column gap-2">
+                    <a
+                      class="icon rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Quick View"
+                      data-bs-target="#quickViewModal"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a
+                      class="icon like rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Wishlist"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+                  <h3 class="text-uppercase mt-4">the wow serum</h3>
+                  <div class="price mt-3">
+                    <p>$95.00</p>
+                    <p class="text-decoration-line-through">$100.00</p>
+                  </div>
+                </div>
+                <div
+                  class="item swiper-slide"
+                  data-title="Daymask Peptide Lip Balm"
+                  data-description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                  data-price="$50.00"
+                  data-sale="$80.00"
+                  data-image="./assets/images/indexImages/newArrival/municare1.jpg"
+                  data-image1="./assets/images/indexImages/newArrival/municare1.jpg"
+                  data-image2="./assets/images/indexImages/newArrival/municare1.jpg"
+                  data-image3="./assets/images/indexImages/newArrival/municare1.jpg"
+                >
+                  <img
+                    class="w-100 h-100"
+                    src="./assets/images/indexImages/newArrival/municare1.jpg"
+                    alt="The image shows three bottles of Revlon nail enamel. The bottles are arranged in a triangular formation with one bottle in the front and two bottles behind it. The front bottle contains a glittery pink nail polish, while the two bottles behind it contain solid pink and red nail polishes. The bottles have black caps and gold bands with the Revlon logo."
+                  />
+                  <img
+                    class="w-100 h-100 hover-img"
+                    src="./assets/images/indexImages/newArrival/municare2.jpg"
+                    alt="The image shows three bottles of Revlon nail enamel. The bottles are arranged in a triangular formation with one bottle in the front and two bottles behind it. The front bottle contains a glittery pink nail polish, while the two bottles behind it contain solid pink and red nail polishes. The bottles have black caps and gold bands with the Revlon logo."
+                  />
+                  <div
+                    class="hot rounded-pill ario-bg-skyBlue ario-text-white text-center text-uppercase"
+                  >
+                    hot
+                  </div>
+
+                  <a
+                    href="#"
+                    class="add-cart cart-func rounded-pill text-uppercase ario-text-black"
+                  >
+                    add to cart
+                  </a>
+                  <span class="right-icons d-flex flex-column gap-2">
+                    <a
+                      class="icon rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Quick View"
+                      data-bs-target="#quickViewModal"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a
+                      class="icon like rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Wishlist"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+                  <h3 class="text-uppercase mt-4">daymusk peptibe lip balm</h3>
+                  <div class="price mt-3">
+                    <p>$50.00</p>
+                  </div>
+                </div>
+                <div
+                  class="item swiper-slide"
+                  data-title="The Eye Smoother"
+                  data-description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                  data-price="$40.00"
+                  data-sale="$75.00"
+                  data-image="./assets/images/indexImages/newArrival/eyesmoother1.jpg"
+                  data-image1="./assets/images/indexImages/newArrival/eyesmoother.jpg"
+                  data-image2="./assets/images/productImages/eye-serum.jpg"
+                  data-image3="./assets/images/productImages/eye-serum-bold.jpg"
+                >
+                  <img
+                    class="w-100 h-100"
+                    src="./assets/images/indexImages/newArrival/eyesmoother1.jpg"
+                    alt="A cylindrical bottle labeled 'MANTLE The Eye Smoother Plumping + Smoothing Eye Cream,' featuring details about its ingredients, hyaluronic acid and niacinamide. The design emphasizes simplicity and skincare benefits."
+                  />
+                  <img
+                    class="w-100 h-100 hover-img"
+                    src="./assets/images/indexImages/newArrival/eyesmoother.jpg"
+                    alt="A bottle labeled 'MANTLE The Eye Smoother Plumping + Smoothing Eye Cream' with a pump dispenser. The label highlights key ingredients: CBD, hyaluronic acid, and niacinamide, emphasizing its skincare benefits and luxurious formulation."
+                  />
+                  <a
+                    href="#"
+                    class="add-cart rounded-pill text-uppercase ario-text-black"
+                  >
+                    view products
+                  </a>
+                  <span class="right-icons d-flex flex-column gap-2">
+                    <a
+                      href="#"
+                      class="icon rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Quick View"
+                      data-bs-target="#quickViewModal"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a
+                      class="icon like rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Wishlist"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+
+                  <h3 class="text-uppercase mt-4">the eye smoother</h3>
+                  <div class="price mt-3">
+                    <p>$40.00 - $75.00</p>
+                  </div>
+                </div>
+                <div
+                  class="item swiper-slide"
+                  data-title="The Whipp"
+                  data-description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                  data-price="$75.00"
+                  data-sale="$80.00"
+                  data-image="./assets/images/indexImages/newArrival/the-whipp.jpg"
+                  data-image1="./assets/images/indexImages/newArrival/the-whipp1.jpg"
+                  data-image2="./assets/images/productImages/whipp.jpg"
+                  data-image3="./assets/images/productImages/whipps.jpg"
+                >
+                  <img
+                    class="w-100 h-100"
+                    src="./assets/images/indexImages/newArrival/the-whipp.jpg"
+                    alt="A white container labeled 'THE WHIPP' whipped body cream by MANTLE. The product emphasizes its key ingredients: shea butter, ceramide complex, hyaluronic acid, and allantoin (1%). The container mentions its size: 200 ML / 6.76 FL.OZ."
+                  />
+                  <img
+                    class="w-100 h-100 hover-img"
+                    src="./assets/images/indexImages/newArrival/the-whipp1.jpg"
+                    alt="A white container of 'THE WHIPP' whipped body cream by MANTLE. The lid is slightly open, revealing the creamy texture inside. The label highlights its features, including 'Ultra-Nourishing Whipped Body Cream with Hyaluronic Acid, Aloe Vera, CBD' and indicates a volume of '200 ML / 6.8 FL.OZ."
+                  />
+
+                  <div
+                    class="discount rounded-pill ario-bg-pinkRose ario-text-white text-center text-uppercase"
+                  >
+                    -6%
+                  </div>
+
+                  <div
+                    class="add-cart cart-func rounded-pill text-uppercase ario-text-black"
+                  >
+                    add to cart
+                  </div>
+                  <span class="right-icons d-flex flex-column gap-2">
+                    <a
+                      class="icon rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Quick View"
+                      data-bs-target="#quickViewModal"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a
+                      class="icon like rounded-circle ario-bg-white ario-text-black d-flex justify-content-center align-items-center"
+                      data-bs-toggle="popover"
+                      data-bs-placement="left"
+                      data-bs-trigger="hover"
+                      data-bs-content="Wishlist"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+                  <h3 class="text-uppercase mt-4">the whipp</h3>
+                  <div class="price mt-3">
+                    <p>$75.00</p>
+                    <p class="text-decoration-line-through">$80.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="quickViewModal"
+        tabindex="-1"
+        aria-labelledby="quickViewLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        >
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <div
+              class="modal-body ario-font-family d-flex align-items-start justify-content-start"
+            >
+              <div class="imag-modal-div h-100 col-lg-5 col-md-5 col-sm-5">
+                <img
+                  id="quickViewImage"
+                  src=""
+                  alt="Product Image"
+                  class="w-100 h-100"
+                />
+              </div>
+
+              <div
+                class="data-div col-lg-7 col-md-7 col-sm-7 mt-5 ms-4 d-flex flex-column"
+              >
+                <h4 id="quickViewTitle" class="text-uppercase m-0 p-0"></h4>
+                <div class="d-flex stars align-items-center m-0 p-0">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star last"></i>
+                  <a href="#">
+                    <p class="review-counts">(1 Customer Review)</p>
+                  </a>
+                </div>
+                <div class="d-flex price gap-2 m-0 p-0">
+                  <p id="quickViewPrice"></p>
+                  <p
+                    class="text-decoration-line-through"
+                    id="quickViewSalePrice"
+                  ></p>
+                </div>
+                <hr class="hor-line m-0 p-0" />
+                <p id="quickViewDesc" class="mt-2"></p>
+                <div class="align">
+                  <div class="d-flex gap-3 me-3 pt-3">
+                    <div
+                      class="col-lg-4 col-md-4 col-sm-4 select-count rounded-pill d-flex align-items-center justify-content-evenly"
+                    >
+                      <button id="decrease">-</button>
+                      <span
+                        class="counter d-flex align-items-center justify-content-center"
+                      >
+                        1
+                      </span>
+                      <button id="increase">+</button>
+                    </div>
+                    <div
+                      class="col-lg-7 cart-func col-md-6 col-sm-6 ario-bg-pinkRose ario-text-white cart maincart rounded-pill text-uppercase d-flex align-items-center justify-content-center"
+                    >
+                      add to cart
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div
+                      class="col-lg-11 col-md-10 col-sm-10 mt-lg-2 mt-md-2 mt-sm-2 ario-text-black cart buy rounded-pill text-uppercase d-flex align-items-center justify-content-center"
+                    >
+                      Buy Now
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer footer-bg pt-5 mt-5">
+      <div class="row ms-3 me-3">
+        <div class="right-footer-div col-lg-3 col-md-3 col-sm-3">
+          <a class="logo" href="#">
+            <img
+              class="logo-img mb-3"
+              src="./assets/images/indexImages/logo.png"
+              alt="Logo with the word 'ARIO' in a modern, sans-serif font, with the letters 'A' and 'R' in uppercase and 'I' and 'O' in lowercase."
+            />
+          </a>
+          <p class="site-desc mt-4">
+            Common cosmetics include lipstick, mascara,<br />
+            eye shadow, foundation, blush, powder,<br />
+            facial cleanser and body lotion,..
+          </p>
+          <img
+            class="payment-img mt-4"
+            src="./assets/images/footer/payment.png"
+            alt="Logos of various payment methods, including AMEX, Mastercard, VISA, PayPal, Apple Pay, and Klarna, visually indicating options for digital or card-based transactions."
+          />
+        </div>
+
+        <div class="left-footer-col col-lg-3 col-md-3 col-sm-3">
+          <h3 class="text-uppercase">About us</h3>
+          <a href="#">FAQs</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Size Guides</a>
+          <a href="#">Materials & Care</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="left-footer-col col-lg-3 col-md-3 col-sm-3 contact">
+          <h3 class="text-uppercase">contact</h3>
+          <div class="d-flex gap-2">
+            <div class="icon">
+              <img
+                class="w-100"
+                src="./assets/images/footer/phone.png"
+                alt="Icon of a telephone handset with three curved lines indicating sound or signal."
+              />
+            </div>
+            <p>Call Phone</p>
+          </div>
+
+          <a class="number" href="#">(+84) 123 567 712</a>
+          <div class="d-flex gap-2">
+            <div class="icon">
+              <img
+                class="w-100"
+                src="./assets/images/footer/mail.png"
+                alt="An icon of an envelope, symbolizing email or messaging, universally recognized for communication or message notifications."
+              />
+            </div>
+            <p>Mail Us</p>
+          </div>
+          <a class="number" href="#">Arioshop@gmail.com</a>
+        </div>
+        <div class="left-footer-col help col-lg-3 col-md-3 col-sm-3">
+          <h3 class="text-uppercase">help</h3>
+          <a href="#">About us</a>
+          <a href="#">The Rewards Stack</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Careers</a>
+          <a href="#">Blogs</a>
+        </div>
+      </div>
+      <hr class="mt-5 mb-4 ms-3 me-3 text-opacity-25" />
+      <div class="ms-3 me-3 mb-3 d-flex justify-content-between">
+        <p>Copyright © 2024. All Rights Reserved.</p>
+        <div class="d-flex social-media">
+          <div class="rounded-circle">
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="rounded-circle">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+          <div class="rounded-circle">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="rounded-circle">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/product.js"></script>
+  </body>
+</html>
